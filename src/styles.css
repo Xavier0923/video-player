@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+mat-slider {
+    width: 30px;
+  }
+
+.mat-slider-track-fill,
+.mat-slider-wrapper,
+.mat-slider-track-wrapper,
+.mat-slider-track-background {
+    height: 5px !important;
+}
+
+.mat-accent .mat-slider-thumb {
+  height: 25px;
+  width: 25px;
+  bottom: -12.5px;
+  right: -12.5x;
+  background-color: #ff4081 !important
+}
