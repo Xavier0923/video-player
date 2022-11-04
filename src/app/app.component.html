@@ -7,7 +7,7 @@
     <div class="video-tools">
         <!-- 影片進度(上排) -->
         <div class="video-progress">
-            <mat-slider step="1" min="0:00" max="10:00" aria-label="units" (input)="timeControl($event)" value="currentTime"></mat-slider>
+            <mat-slider step="1" min="0" max="100" aria-label="units" (input)="timeControl($event)" value="sliderPercent"></mat-slider>
         </div>
         <!-- 左邊功能列(下排) -->
         <div class="video-features">
@@ -39,7 +39,7 @@
                 </div>
                 <!-- 時間 -->
                 <div class="video-time">
-                    <span>{{currentTime}}</span> / <span>{{totalTime}}</span>
+                    <span>{{currentTime | time}}</span> / <span>{{totalTime}}</span>
                 </div>
             </div>
             <!-- 右邊功能 -->

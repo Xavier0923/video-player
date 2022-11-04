@@ -10,10 +10,12 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { DatePipe } from '@angular/common';
+import { TimePipe } from './time.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimePipe
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { DatePipe } from '@angular/common';
     BrowserAnimationsModule,
     MatButtonModule
   ],
-  providers: [DatePipe],
+  providers: [DatePipe, TimePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
